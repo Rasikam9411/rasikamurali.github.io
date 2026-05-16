@@ -4,261 +4,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rasika Murali | IT Student</title>
+
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,400;1,300&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 </head>
+
 <body>
 
-  <nav id="navbar">
-    <div class="nav-inner">
-      <span class="nav-logo">Rasika<span>.</span></span>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#activities">Activities</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
-    </div>
-    <ul class="mobile-menu" id="mobileMenu">
-      <li><a href="#about" onclick="closeMenu()">About</a></li>
-      <li><a href="#education" onclick="closeMenu()">Education</a></li>
-      <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
-      <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
-      <li><a href="#activities" onclick="closeMenu()">Activities</a></li>
-      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+<nav id="navbar">
+  <div class="nav-inner">
+    <span class="nav-logo">Rasika<span>.</span></span>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
 
-  <section id="hero">
-    <div class="hero-inner">
-      <p class="hero-greeting">Hi, I'm</p>
-      <h1 class="hero-name">Rasika Murali</h1>
-      <p class="hero-title">IT Student &nbsp;·&nbsp; Aspiring Software Developer</p>
-      <p class="hero-desc">A third-year B.Tech Information Technology student from Puducherry, interested in building useful web applications and solving problems through code.</p>
-      <div class="hero-btns">
-        <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="#contact" class="btn-outline">Get in Touch</a>
-      </div>
+    <button class="hamburger" id="hamburger">☰</button>
+  </div>
+
+  <ul class="mobile-menu" id="mobileMenu">
+    <li><a href="#about" onclick="closeMenu()">About</a></li>
+    <li><a href="#education" onclick="closeMenu()">Education</a></li>
+    <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+    <li><a href="#activities" onclick="closeMenu()">Activities</a></li>
+    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div class="hero-inner">
+    <h1 class="hero-name">Rasika Murali</h1>
+    <p class="hero-title">IT Student · Developer</p>
+    <p class="hero-desc">Building web apps and learning real-world development.</p>
+  </div>
+</section>
+
+<section id="contact" class="bg-light">
+  <div class="container">
+
+    <div class="contact-grid">
+
+      <a class="contact-card" href="mailto:rasikamurali9411@gmail.com">
+        <span class="contact-icon">📧</span>
+        <span>Email</span>
+      </a>
+
+      <a class="contact-card" href="tel:+919944272868">
+        <span class="contact-icon">📱</span>
+        <span>Phone</span>
+      </a>
+
+      <!-- ⭐ GitHub ICON FIXED -->
+      <a class="contact-card" href="https://github.com/Rasikam9411" target="_blank">
+        <img class="contact-icon-img"
+          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+          alt="GitHub" />
+        <span>GitHub</span>
+      </a>
+
+      <!-- ⭐ LinkedIn ICON FIXED -->
+      <a class="contact-card" href="https://www.linkedin.com/in/rasika-murali" target="_blank">
+        <img class="contact-icon-img"
+          src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+          alt="LinkedIn" />
+        <span>LinkedIn</span>
+      </a>
+
     </div>
-  </section>
 
-  <section id="about">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>I'm currently pursuing B.Tech in Information Technology at Sri Manakula Vinayagar Engineering College, Puducherry (2023–2027), with a CGPA of 9.10.</p>
-          <p>I enjoy working on web-based projects and have a growing interest in frontend development and problem-solving. Outside of academics, I actively participate in hackathons and industry events to learn how technology is applied in the real world.</p>
-          <p>I'm comfortable working in teams, communicating ideas clearly, and managing my time across academic and project responsibilities.</p>
-        </div>
-        <div class="about-stats">
-          <div class="stat-card"><span class="stat-num">9.10</span><span class="stat-label">CGPA</span></div>
-          <div class="stat-card"><span class="stat-num">150+</span><span class="stat-label">Problems Solved</span></div>
-          <div class="stat-card"><span class="stat-num">2</span><span class="stat-label">Projects Built</span></div>
-          <div class="stat-card"><span class="stat-num">3</span><span class="stat-label">Certifications</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <section id="education" class="bg-light">
-    <div class="container">
-      <h2 class="section-title">Education</h2>
-      <div class="edu-list">
-        <div class="edu-card">
-          <div class="edu-left">
-            <div class="edu-icon">🎓</div>
-            <div>
-              <h3>Sri Manakula Vinayagar Engineering College</h3>
-              <p class="edu-deg">B.Tech — Information Technology</p>
-              <p class="edu-loc">Puducherry &nbsp;·&nbsp; 2023 – 2027</p>
-            </div>
-          </div>
-          <div class="edu-score">9.10<span>CGPA</span></div>
-        </div>
-        <div class="edu-card">
-          <div class="edu-left">
-            <div class="edu-icon">🏫</div>
-            <div>
-              <h3>Amalorpavam Higher Secondary School</h3>
-              <p class="edu-deg">Higher Secondary Certificate (HSC)</p>
-              <p class="edu-loc">Puducherry &nbsp;·&nbsp; 2022 – 2023</p>
-            </div>
-          </div>
-          <div class="edu-score">89.5%<span>Score</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-wrap">
-        <div class="skill-group">
-          <h4>Languages</h4>
-          <div class="tag-row">
-            <span class="tag">C</span>
-            <span class="tag">Java (Basics)</span>
-            <span class="tag">Python</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Web</h4>
-          <div class="tag-row">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">Flask</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Tools</h4>
-          <div class="tag-row">
-            <span class="tag">VS Code</span>
-            <span class="tag">Android Studio (Basics)</span>
-            <span class="tag">Canva</span>
-            <span class="tag">Git</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Soft Skills</h4>
-          <div class="tag-row">
-            <span class="tag">Communication</span>
-            <span class="tag">Leadership</span>
-            <span class="tag">Teamwork</span>
-            <span class="tag">Time Management</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Languages Known</h4>
-          <div class="tag-row">
-            <span class="tag">English</span>
-            <span class="tag">Tamil</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="bg-light">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-badge">Mini Project</span>
-            <span class="project-date">Jul – Sep 2025</span>
-          </div>
-          <h3>Career Guidance Website for Engineers</h3>
-          <p>A web application that helps engineering students explore career options based on their interests and find relevant learning resources. Worked on the user login interface and basic frontend pages.</p>
-          <div class="tag-row">
-            <span class="tag-tech">HTML</span>
-            <span class="tag-tech">CSS</span>
-            <span class="tag-tech">Flask</span>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-badge">Practice Project</span>
-            <span class="project-date">Aug – Sep 2024</span>
-          </div>
-          <h3>Direct Marketing App for Farmers</h3>
-          <p>An Android application that allows farmers to list and sell agricultural products directly to customers. Contributed to initial development and presented at Innovators Day 2024, SMVEC.</p>
-          <div class="tag-row">
-            <span class="tag-tech">HTML</span>
-            <span class="tag-tech">CSS</span>
-            <span class="tag-tech">Android Studio (Basics)</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="activities">
-    <div class="container">
-      <h2 class="section-title">Activities & Achievements</h2>
-      <div class="activity-list">
-        <div class="activity-item">
-          <span class="activity-icon">🏆</span>
-          <div>
-            <h4>ICT Academy Youth Talk — Pre-finalist</h4>
-            <p>Selected as a pre-finalist by demonstrating communication skills and presenting innovative ideas. <span class="act-date">Oct 2024</span></p>
-          </div>
-        </div>
-        <div class="activity-item">
-          <span class="activity-icon">🏭</span>
-          <div>
-            <h4>Garnishing Talent 2025 — Eaton & CII</h4>
-            <p>Participated in an industry event focused on professional skills, career development, and understanding industry expectations. <span class="act-date">Aug – Sep 2025</span></p>
-          </div>
-        </div>
-        <div class="activity-item">
-          <span class="activity-icon">💡</span>
-          <div>
-            <h4>Smart India Hackathon (SIH) 2024</h4>
-            <p>Contributed to the initial development of the Farmers Direct Marketing App as part of a team. <span class="act-date">Aug – Sep 2024</span></p>
-          </div>
-        </div>
-        <div class="activity-item">
-          <span class="activity-icon">🎤</span>
-          <div>
-            <h4>Innovators Day 2024 — SMVEC</h4>
-            <p>Presented the Farmers App project at the college's annual innovation showcase. <span class="act-date">Sep 2024</span></p>
-          </div>
-        </div>
-        <div class="activity-item">
-          <span class="activity-icon">💻</span>
-          <div>
-            <h4>Competitive Programming — SkillRack</h4>
-            <p>Solved 150+ problems on SkillRack under the handle <em>Rasika M</em>.</p>
-          </div>
-        </div>
-      </div>
-      <h3 class="sub-title">Certifications</h3>
-      <div class="tag-row">
-        <span class="tag-cert">Infosys Springboard – Frontend Web Development</span>
-        <span class="tag-cert">NPTEL – Python for Data Science</span>
-        <span class="tag-cert">NPTEL – Software Testing</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="bg-light">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <p class="contact-intro">I'm open to internship opportunities and collaborations. Feel free to reach out.</p>
-      <div class="contact-grid">
-        <a class="contact-card" href="mailto:rasikamurali9411@gmail.com">
-          <span class="contact-icon">✉</span>
-          <span class="contact-label">Email</span>
-          <span class="contact-val">rasikamurali9411@gmail.com</span>
-        </a>
-        <a class="contact-card" href="tel:+919944272868">
-          <span class="contact-icon">📞</span>
-          <span class="contact-label">Phone</span>
-          <span class="contact-val">+91 99442 72868</span>
-        </a>
-        <a class="contact-card" href="https://github.com/Rasikam9411" target="_blank">
-          <span class="contact-icon">⌥</span>
-          <span class="contact-label">GitHub</span>
-          <span class="contact-val">github.com/Rasikam9411</span>
-        </a>
-        <a class="contact-card" href="https://www.linkedin.com/in/rasika-murali" target="_blank">
-          <span class="contact-icon">in</span>
-          <span class="contact-label">LinkedIn</span>
-          <span class="contact-val">Rasika Murali</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 Rasika Murali &nbsp;·&nbsp; Puducherry, India</p>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
