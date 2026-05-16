@@ -16,4 +16,4 @@ hamburger.addEventListener('click', () => {
 
 function closeMenu() {
   mobileMenu.classList.remove('open');
-}
+} 
